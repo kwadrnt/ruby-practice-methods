@@ -18,15 +18,14 @@ print count_letters("nba playoffs")
 
 # 3) Write a method called mock_me that gets some input from the terminal and puts it until the users type quit or q in the terminal. (Be sure to remove trailing \n.)
 def mock_me input
-input = nil
   while input != "quit" && input != "q"
-    puts input
-    puts "Enter input here:"
+    puts input = gets.chomp
     input = gets.chomp
   end
 end
 
-mock_me google
+mock_me('google')
+
 # Write a method for each exercise below that uses Array#map:
 # 1.) Write a method called multiply_by that takes a number and returns an array of numbers multiplied by that number.
 
